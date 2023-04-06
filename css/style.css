@@ -1,0 +1,428 @@
+/* -----------------RÉGLAGES----------------- */
+
+@font-face {
+    font-family: 'mark';
+    src: url('../fonts/mark_pro_bold-webfont.woff2') format('woff2'),
+        url('../fonts/mark_pro_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../fonts/d-dincondensed-webfont.woff2') format('woff2'),
+        url('../fonts/d-dincondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --color-gray: #c4c4c4;
+    --color-darkgray: #1D1E29;
+    --color-dark: #10101A;
+    --color-light-purple: #cf59e6;
+    --color-light-blue: #6bc5f8;
+    --color-light-orange: #fdca5b;
+}
+
+/* -----------------PAGE----------------- */
+
+html::-webkit-scrollbar {
+    width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    position: relative;
+    box-shadow: inset -5px 0 0 1px var(--color-darkgray), inset -9px 0 0 1px var(--color-darkgray);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--color-gray);
+    border-radius: 8px;
+    border-top: 1px var(--color-darkgray) solid;
+}
+
+body {
+    background-color: #10101A;
+    max-width: 1920px;
+    min-width: 500px;
+    color: var(--color-gray);
+}
+
+#bgImage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/fog-bg-top3.png"), url("../images/fog-bg-top.png"), url("../images/fog-bg-top2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+}
+
+.dropdown-menu {
+    background-color: var(--color-darkgray);
+    
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: var(--color-gray);
+    font-family: 'mark', sans-serif;
+    
+}
+
+.dropdown-menu a:hover {
+    transition: .5s;
+    transform: scale(1.05);
+    color: white;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu i {
+    margin-right: 10px;
+}
+
+.navbar {
+    background-color: var(--color-darkgray);
+    height: 70px;
+}
+
+.navbar p,
+.navbar span {
+    color: var(--color-gray);
+    font-family: 'mark', sans-serif;
+    font-weight: light;
+    font-size: 14px;
+}
+
+.fa-bars {
+    color: var(--color-gray);
+    font-size: 1.5rem;
+}
+
+nav .btn {
+    transition: 0.5s;
+}
+
+nav .btn:hover {
+    background-color: #3a4047;
+}
+
+.borderc {
+    border: 1px solid #3a4047;
+}
+
+.navbarlabels2 {
+    position: fixed;
+    top: -40px;
+    z-index: 3;
+    display: none;
+}
+
+.title {
+    font-family: 'mark', sans-serif;
+    font-size: 5rem;
+    color: white;
+    margin-top: 3rem;
+}
+
+.secondTitle {
+    font-size: 2.5rem;
+    font-family: 'mark', sans-serif;
+    margin-left: 22%;
+}
+
+.thirdTitle {
+    font-size: 2.5rem;
+    font-family: 'mark', sans-serif;
+}
+
+.heading {
+    width: 56%;
+}
+
+.gradient-heading {
+    background: linear-gradient(-45deg, var(--color-light-blue), var(--color-light-purple), var(--color-light-blue), var(--color-light-purple));
+    animation: gradient 4s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 2rem;
+    background-size: 400% 400%;
+}
+
+.heading-projectview {
+    display: inline-block;
+    font-family: 'D-DIN', sans-serif;
+    font-size: 1.2rem;
+    line-height: 92.4%;
+    letter-spacing: 0.1em;
+    color: var(--color-gray);
+    text-decoration: none;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.heading-projectview:after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background: var(--color-gray);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.heading-projectview:hover:after {
+    width: 100%
+}
+
+.heading-projectview-booki:after {
+    background: #0D6EEF;
+}
+
+.desc {
+    margin: 21rem 0px 10rem 0px;
+    font-family: 'mark', sans-serif;
+    width: 56%;
+}
+
+.desc p {
+    width: 56%;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+.gradient-project {
+    background: linear-gradient(-45deg, var(--color-light-blue), var(--color-light-orange), var(--color-light-purple));
+    animation: gradient 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 2rem;
+    background-size: 400% 400%;
+}
+
+#sectionProjects {
+    margin: 0px 50px;
+}
+
+.card {
+    background: linear-gradient(0deg, var(--color-dark), var(--color-darkgray));
+    color: white;
+    margin-top: 11rem;
+    flex-direction: row;
+    width: 80%;
+    height: 500px;
+}
+
+.linkImg {
+    width: 100%;
+}
+
+.card-img-top {
+    object-fit: cover;
+    object-position: top left;
+    height: 400px;
+}
+
+.showImg {
+    background-position: left top;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.hoverImg {
+    position: absolute;
+    top: 9%;
+    left: 4.2%;
+    width: 46%;
+    height: 405px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.card-img img {
+    object-fit: cover;
+}
+
+.card-img:hover .hoverImg {
+    visibility: visible;
+    opacity: 1;
+}
+
+.showImg img {
+    width: 100%;
+}
+
+.hoverImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-center {
+    object-position: center;
+}
+
+.card-body {
+    width: 100%;
+    padding: 0px;
+}
+
+.linkCard {
+    margin-top: 0px;
+}
+
+
+.logoLink {
+    margin-top: 20%;
+}
+
+.gitHLogo {
+    color: var(--color-gray);
+}
+
+.gitHLogo:hover {
+    transition: .5s;
+    color: white;
+}
+
+.heading-projectview-hotelhouse {
+    color: #D4C7B7;
+}
+
+.heading-projectview-hotelhouse:after {
+    background-color: #D4C7B7;
+}
+
+.heading-projectview-tictactoe {
+    color: #979797;
+}
+
+.heading-projectview-tictactoe:after {
+    background-color: #979797;
+}
+
+.card h4 {
+    transform: rotate(360deg);
+    writing-mode: tb-rl;
+    font-family: 'D-DIN', sans-serif;
+    letter-spacing: .19em;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #5c646d;
+}
+
+.heading4 {
+    height: 400px;
+}
+
+footer {
+    border-top: 1px solid var(--color-gray);
+}
+
+.logoFooter {
+    margin-left: 35px;
+}
+
+.logoFooter p {
+    font-family: 'D-DIN', sans-serif;
+    margin: 0px;
+}
+
+/* -----------------KEYFRAMES----------------- */
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* -----------------RESPONSIVE----------------- */
+
+@media screen and (max-width:900px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
+    .hoverImg {
+        position: absolute;
+        top: 6%;
+        left: 6%;
+        width: 88%;
+    }
+
+    .card-body {
+        margin-top: 3rem;
+    }
+
+    .logoLink {
+        margin-top: 10%;
+    }
+
+    navbar {
+        width: 350px !important;
+    }
+
+    .navbar span {
+        display: none
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .card {
+        height: inherit
+    }
+
+    .card h4 {
+        transform: inherit;
+        writing-mode: inherit;
+        margin-top: 25px;
+    }
+
+    .heading4 {
+        height: inherit;
+    }
+
+}
+
+
+@media screen and (max-width:700px) {
+
+    .navbar {
+        width: 350px !important;
+    }
+
+    .navbar span {
+        display: none
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+}
