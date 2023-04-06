@@ -62,14 +62,14 @@ body {
 
 .dropdown-menu {
     background-color: var(--color-darkgray);
-    
+
 }
 
 .dropdown-menu a {
     text-decoration: none;
     color: var(--color-gray);
     font-family: 'mark', sans-serif;
-    
+
 }
 
 .dropdown-menu a:hover {
@@ -247,7 +247,7 @@ i {
     height: 405px;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0.3s linear, opacity 0.3s linear;
+    transition: all 1s;
 }
 
 .card-img img {
@@ -283,7 +283,7 @@ i {
 
 
 .logoLink {
-    margin-top: 20%;
+    margin-top: 30px;
 }
 
 .gitHLogo {
@@ -382,7 +382,7 @@ footer {
         margin-top: 10%;
     }
 
-    navbar {
+    .navbar {
         width: 350px !important;
     }
 
@@ -406,23 +406,6 @@ footer {
 
     .heading4 {
         height: inherit;
-    }
-
-}
-
-
-@media screen and (max-width:700px) {
-
-    .navbar {
-        width: 350px !important;
-    }
-
-    .navbar span {
-        display: none
-    }
-
-    .title {
-        font-size: 3rem;
     }
 
 }
