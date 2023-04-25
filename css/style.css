@@ -240,14 +240,15 @@ i {
 }
 
 .hoverImg {
-    position: absolute;
-    top: 9%;
+    position: relative;
+    bottom: 400px;
+    /* top: 9%;
     left: 4.2%;
-    width: 46%;
-    height: 405px;
+    width: 46%; */
+    height: 400px;
     visibility: hidden;
     opacity: 0;
-    transition: all 1s;
+    transition: all 0.7s;
 }
 
 .card-img img {
