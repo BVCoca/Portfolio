@@ -62,14 +62,14 @@ body {
 
 .dropdown-menu {
     background-color: var(--color-darkgray);
-
+    
 }
 
 .dropdown-menu a {
     text-decoration: none;
     color: var(--color-gray);
     font-family: 'mark', sans-serif;
-
+    
 }
 
 .dropdown-menu a:hover {
@@ -223,14 +223,6 @@ i {
     height: 500px;
 }
 
-<<<<<<< HEAD
-.card-img {
-=======
-.cardImg {
->>>>>>> main
-    height: 400px;
-}
-
 .linkImg {
     width: 100%;
 }
@@ -248,15 +240,18 @@ i {
 }
 
 .hoverImg {
-    position: relative;
-    bottom: 400px;
-    /* top: 9%;
+    display: none;
+}
+
+/* .hoverImg {
+    position: absolute;
+    top: 9%;
     left: 4.2%;
-    width: 46%; */
-    height: 400px;
+    width: 46%;
+    height: 405px;
     visibility: hidden;
     opacity: 0;
-    transition: all 0.7s;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
 }
 
 .card-img img {
@@ -266,7 +261,7 @@ i {
 .card-img:hover .hoverImg {
     visibility: visible;
     opacity: 1;
-}
+} */
 
 .showImg img {
     width: 100%;
@@ -292,7 +287,7 @@ i {
 
 
 .logoLink {
-    margin-top: 30px;
+    margin-top: 20%;
 }
 
 .gitHLogo {
@@ -391,7 +386,7 @@ footer {
         margin-top: 10%;
     }
 
-    .navbar {
+    navbar {
         width: 350px !important;
     }
 
@@ -415,6 +410,23 @@ footer {
 
     .heading4 {
         height: inherit;
+    }
+
+}
+
+
+@media screen and (max-width:700px) {
+
+    .navbar {
+        width: 350px !important;
+    }
+
+    .navbar span {
+        display: none
+    }
+
+    .title {
+        font-size: 3rem;
     }
 
 }
